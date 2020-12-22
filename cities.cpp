@@ -102,10 +102,13 @@ void DisplayInputFile(const char* FileName){
 		 cout<<"Error, couldn't open"<<endl;
 		 exit(1);
 	 }
+	// goes to the end of file 
 	Infile.seekg(0,ios::end);
+	//returns the end of file then divides by the size of CityStruct
 	int numberOfRecords = Infile.tellg()/sizeof(CityStruct);
+	// Creates an array of Structs
 	CityStruct ReadingCities[numberOfRecords];
-	
+	//returns to the beginning of file
 	Infile.seekg(0,ios::beg);
 	Infile.read((char*)ReadingCities, sizeof(CityStruct)*numberOfRecords);
 	Infile.close();
