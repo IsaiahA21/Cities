@@ -1,4 +1,4 @@
-//  ENSF 337 Fall 2020 - Exercise B
+
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
@@ -73,7 +73,7 @@ void clearfile (const char* FileName) {
 	ofstream out (FileName, ios::out | ios::binary);
 	if (out.fail()){
 		cout<< "Couldn't properly open file"<<endl;
-		//exit(1);
+		exit(1);
 	} 
 	out.clear();
 	out.close();
