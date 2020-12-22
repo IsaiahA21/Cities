@@ -1,9 +1,6 @@
 //  ENSF 337 Fall 2020 - Exercise B
 #include <iostream>
 #include <fstream>
-#include <sstream>
-#include <stdlib.h>
-
 #include <stdio.h>
 #include <string>
 using namespace std;
@@ -118,4 +115,4 @@ void DisplayInputFile(const char* FileName){
         cout <<"Population "<< ReadingCities[i].population<<endl<<endl;
 	}
 }
-//Does cygwin autopull?
+
