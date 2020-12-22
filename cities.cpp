@@ -118,4 +118,4 @@ void DisplayInputFile(const char* FileName){
         cout <<"Population "<< ReadingCities[i].population<<endl<<endl;
 	}
 }
-
+//Does cygwin autopull?
